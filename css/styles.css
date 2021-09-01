@@ -11488,3 +11488,34 @@ color: white;
   font-family: 'Merriweather Sans', sans-serif;
   margin-bottom: 2rem;
 }
+
+.text-under-font-awesome{
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size:20px
+}
+
+.home-info-description{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.bold-number{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 700;
+}
+
+
+hr.dividerr {
+  height: 0.2rem;
+  max-width: 5.25rem;
+  background-color: #000000;
+  opacity: 1;
+}
+
+.more-info{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 700;
+  font-size:22px ;
+}

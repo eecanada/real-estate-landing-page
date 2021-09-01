@@ -82,3 +82,6 @@ $(".vpop").on('click', function(e) {
     $("#video-popup-iframe").attr('src', '');
   });
   
+
+
+  let badge = document.getElementsByClassName('')

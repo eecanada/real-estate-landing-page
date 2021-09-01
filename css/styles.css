@@ -11455,6 +11455,7 @@ header.masthead h1, header.masthead .h1 {
 
 .property-name{
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .address{
@@ -11599,7 +11600,9 @@ hr.dividerr {
   justify-content: center;
   align-items:center;
   color:white;
-  position: relative
+  position: relative;
+  margin-top: 5rem;
+  margin-bottom: 5rem
 
 }
 
@@ -11617,6 +11620,7 @@ hr.dividerr {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+
 }
 
 #play-video-text{
@@ -11624,6 +11628,12 @@ hr.dividerr {
   margin-left:1rem;
   align-items: center;
   font-size: 18px;
+  font-family: 'Merriweather Sans', sans-serif;
+
+}
+
+.play-button{
+  cursor: pointer;
 }
 
 
@@ -11631,8 +11641,48 @@ hr.dividerr {
 input {
   /* outline: 0; */
   border-width: 0 0 2px;
-  border-color: #BFBFBF
+  border-color: #BFBFBF;
+  font-family: 'Merriweather Sans', sans-serif;
+
 }
 input:focus {
   border-color: black
+}
+
+.contact-text{
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 700;
+  font-size: 56px;
+  margin-bottom: 2rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active {
+  color: #BFBFBF !important;
+}
+
+/* /////////////////CALENDLY////////////// */
+
+
+
+.calendly-badge-widget {
+  position: fixed;
+  right: 20px;
+  bottom: 200px;
+  z-index: 9998;
+}
+
+.calendly-badge-widget .calendly-badge-content {
+  display: table-cell;
+  width: auto;
+  height: 78px !important;;
+  padding: 0px 100px !important;
+  border-radius: 0px !important;
+  box-shadow: rgb(0 0 0 / 25%) 0px 2px 5px;
+  font-family: 'Merriweather Sans', sans-serif !important;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 22px !important;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }

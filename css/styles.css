@@ -11286,7 +11286,8 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
+  
 }
 
 .text-white-75 {
@@ -11458,9 +11459,32 @@ header.masthead h1, header.masthead .h1 {
 
 .address{
   color: white;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  margin-top: 1rem;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 #price{
   color: white;
   font-weight: 700;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 4rem;
+}
+
+#arrow{
+color: white;
+
+}
+
+
+.gallery{
+  margin-top: 5rem;
+}
+
+.home-info-text{
+  font-weight: 700;
+  font-size: 56px;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-bottom: 2rem;
 }

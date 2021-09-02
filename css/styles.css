@@ -11723,3 +11723,21 @@ input:focus {
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
   color: #BFBFBF;
 }
+
+@media screen and (max-width: 576px) {
+  .phone{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .desktop{
+    display: block;
+  }
+  .phone{
+    display: none;
+  }
+}

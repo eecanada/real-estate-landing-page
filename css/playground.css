@@ -11917,6 +11917,7 @@ header.masthead .h1 {
   font-weight: 700;
   font-family: 'Merriweather Sans', sans-serif;
   margin-bottom: 4rem;
+  z-index: -1;
 }
 
 #arrow {
@@ -12232,6 +12233,7 @@ body {
   height: 100%; /* Set video container element height here */
   overflow: hidden;
   background: #111; /* bg color, if video is not high enough */
+  z-index: -1;
 }
 
 /* horizontally center the video */

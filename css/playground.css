@@ -12209,6 +12209,9 @@ header.masthead p {
   .desktop {
     display: block;
   }
+  .masthead-mobile{
+    display: none;
+  }
 }
 
 

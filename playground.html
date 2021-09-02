@@ -1,180 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>8th Vision Property - Real Estate Photography </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/8thvision.ico" />
+    <!-- Bootstrap Icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5826f42d14.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- SimpleLightbox plugin CSS-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
+      rel="stylesheet"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/playground.css" rel="stylesheet" />
   </head>
-
-  <style>
-    /* Lazy-man Reset */
-* {
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-
-/* Fullscreen Section */
-header {
-  width: 100%;
-  /* 100% height */
-  height: 80vh;
-  color: white;
-  background: #2980b9;
-  text-align: center;
-  padding: 20px;
-  /* Fancy flex-box centering */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -webkit-display: flex;
-  -webkit-align-items: center;
-  -webkit-justify-content: center;
-}
-
-header h1 {
-  font-size: 40px;
-  font-family: 'Roboto';
-  font-weight: 700;
-  max-width: 700px;
-  margin-bottom: 10px;
-}
-
-header p {
-  font-family: 'Roboto Slab';
-  font-weight: 400;
-  font-size: 20px;
-  max-width: 700px;
-  margin-bottom: 20px;
-  opacity: .65;
-}
-
-.play {
-  width: 70px;
-  height: 70px;
-  background: #222;
-  display: block;
-  margin: 0 auto;
-  /* Important for :after */
-  position: relative;
-  /* Makes a circle */
-  border-radius: 50%;
-}
-
-.play:hover {
-  background: #333;
-  cursor: pointer;
-}
-
-.play:after {
-  position: absolute;
-  content: "";
-  /* Centering */
-  top: 50%;
-  margin-top: -15px;
-  left: 50%;
-  margin-left:  -8px;
-  /* CSS Triangle */
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 15px 0 15px 20px;
-  border-color: transparent transparent transparent #ffffff;
-}
-
-/* Fullscreen Overlay */
-.overlay {
-  width: 100%;
-  height: 100vh;
-  /* 50% opacity black */
-  background: rgba(0,0,0,.5);
-  /* Stays locked on scroll */
-  position: fixed;
-  /* On top of the rest*/
-  z-index: 2;
-  /* Hidden */
-  opacity: 0;
-  /* No interference */
-  left: -100%;
-  /* CSS3 Transition */
-  transition: opacity .5s;
-  -webkit-transition: opacity .5s;
-}
-
-/* 90% width container */
-.video-container {
-  width: 90%;
-  /* Centering */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-}
-
-.close {
-  width: 20px;
-  fill: white;
-  position: absolute;
-  right: 0;
-  /* Bring above video */
-  top: -30px;
-}
-
-.close:hover {
-  /* 50% opacity white */
-  fill: rgba(255,255,255,0.5);
-  cursor: pointer;
-}
-
-/* Class to fade in overlay */
-.show {
-  opacity: 1;
-}
-  </style>
-  <body>
-    <div class="overlay">
-      <div class="video-container">
-        <!-- SVG Close (X) Icon -->
-        <svg
-          class="close"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="39.2 22.3 25 24.5"
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top py-3"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">
+          <span id="nil"> Eder Canada </span>
+          <span id="realtor"> / Realtor </span>
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <path
-            d="M39.5,46.4c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4l10.3-10.3L62,46.4c0.2,0.2,0.6,0.4,0.9,0.4c0.3,0,0.6-0.1,0.9-0.4c0.5-0.5,0.5-1.3,0-1.8L53.5,34.3l9.8-9.8c0.5-0.5,0.5-1.3,0-1.8c-0.5-0.5-1.3-0.5-1.8,0l-9.8,9.8l-9.8-9.8c-0.5-0.5-1.3-0.5-1.8,0c-0.5,0.5-0.5,1.3,0,1.8l9.8,9.8L39.5,44.6C39,45.1,39,45.9,39.5,46.4z"
-          />
-        </svg>
-
-        <!-- Embedded video -->
-        <iframe
-          id="video"
-          src="https://player.vimeo.com/video/582737090?api=1"
-          frameborder="0"
-          webkitallowfullscreen
-          mozallowfullscreen
-          allowfullscreen
-        ></iframe>
-      </div>
-    </div>
-
-    <header>
-      <div>
-        <h1>Home Video Tour</h1>
-        <div class=>
-          <p>
-            Play Video
-           </p>
-           <span class="play"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info">Info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#video">Video Tour</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
+    </nav>
 
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+
+    <div class="videobg">
+      <div class="videobg-width">
+        <div class="videobg-aspect">
+          <div class="videobg-make-height">
+            <div class="videobg-hide-controls">
+                <iframe src="https://player.vimeo.com/video/582737090?autoplay=1&muted=1&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <header class="masthead sticky-top" id="home">
+        <div class="container px-4 px-lg-5 h-100">
+          <div
+            class="
+              row
+              gx-4 gx-lg-5
+              h-100
+              align-items-center
+              justify-content-start
+              text-left
+            "
+          >
+            <div class="col-lg-8 align-self-end desktop">
+              <h1 class="text-white font-weight-bold property-name">
+                Madison Studio in the <br />
+                Heart of Los Angeles
+              </h1>
+              
+            </div>
+  
+            <div class="col-lg-8 align-self-end mobile">
+              <h1 class="text-white font-weight-bold property-name">
+                Madison Studio in the 
+                Heart of Los Angeles
+              </h1> 
+            </div>
+  
+  
+            <div class="col-lg-8 align-self-baseline">
+              <p class="address">3489 Laurel Way, Beverly Hills, CA 90210</p>
+              <p class="mb-5 address">
+                &#8226; 4 Conference Rooms &#8226; 1 Kitchen &#8226; 11,000 SF
+                &#8226; 35 Parking Spaces
+              </p>
+              <h1 id="price">$2,300,000</h1>
+  
+              <span id="arrow">
+                <i class="fas fa-chevron-down fa-2x" data-aos="zoom-in-down"></i>
+              </span>
+              <!-- <a class="btn btn-primary btn-xl" href="#about">Find Out More</a> -->
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+
+
+
+
+    <!-- Masthead-->
+     
+
+    <!-- Gallery-->
+    <div class="container my-4 " id="gallery" >
+      <!--Grid row-->
+      <div class="row gallery" data-aos="fade-up" >
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <img
+            src="./assets/img/FINAL_00017.jpg"
+            class="img-fluid mb-4"
+            alt=""
+          />
+
+          <img
+            src="./assets/img/FINAL_00004.jpg"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.3s"
+          />
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img
+            src="./assets/img/FINAL_00003.jpg"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.1s"
+          />
+
+          <img
+            src="./assets/img/FINAL_00016.jpg"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.4s"
+          />
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img
+            src="./assets/img/FINAL_00008.jpg"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.2s"
+          />
+
+          <img
+            src="./assets/img/FINAL_00019.jpg"
+            class="img-fluid mb-4"
+            alt=""
+            data-wow-delay="0.5s"
+          />
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+
+    
+
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-8 col-xl-6 text-left">
+            <h2 class="mt-0 contact-text">Contact Us Today!</h2>
+            <!-- <hr class="divider" /> -->
+            <!-- <p class="text-muted mb-5">
+              Ready to start your next project with us? Send us a messages and
+              we will get back to you as soon as possible!
+            </p> -->
+          </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+          <div class="col-lg-6">
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- * * SB Forms Contact Form * *-->
+            <!-- * * * * * * * * * * * * * * *-->
+            <!-- This form is pre-integrated with SB Forms.-->
+            <!-- To make this form functional, sign up at-->
+            <!-- https://startbootstrap.com/solution/contact-forms-->
+            <!-- to get an API token!-->
+            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+              <!-- Name input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name..."
+                  data-sb-validations="required"
+                />
+                <label for="name">Full name</label>
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  A name is required.
+                </div>
+              </div>
+              <!-- Email address input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  data-sb-validations="required,email"
+                />
+                <label for="email">Email address</label>
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  An email is required.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
+              </div>
+              <!-- Phone number input-->
+              <div class="form-floating mb-3">
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="(123) 456-7890"
+                  data-sb-validations="required"
+                />
+                <label for="phone">Phone number</label>
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  A phone number is required.
+                </div>
+              </div>
+              <!-- Message input-->
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  id="message"
+                  type="text"
+                  placeholder="Enter your message here..."
+                  style="height: 10rem"
+                  data-sb-validations="required"
+                ></textarea>
+                <label for="message">Message</label>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
+              </div>
+              <!-- Submit success message-->
+              <!---->
+              <!-- This is what your users will see when the form-->
+              <!-- has successfully submitted-->
+              <div class="d-none" id="submitSuccessMessage">
+                <div class="text-center mb-3">
+                  <div class="fw-bolder">Form submission successful!</div>
+                  To activate this form, sign up at
+                  <br />
+                  <!-- <a href="https://startbootstrap.com/solution/contact-forms"
+                    >https://startbootstrap.com/solution/contact-forms</a
+                  > -->
+                </div>
+              </div>
+              <!-- Submit error message-->
+              <!---->
+              <!-- This is what your users will see when there is-->
+              <!-- an error submitting the form-->
+              <div class="d-none" id="submitErrorMessage">
+                <div class="text-center text-danger mb-3">
+                  Error sending message!
+                </div>
+              </div>
+              <!-- Submit Button-->
+              <div class="d-gridd">
+                <br>
+                <button
+                  class="disabled submit-button"
+                  id="submitButton"
+                  type="submit"
+                >
+                  Submit
+                </button>
+                 <hr class="dividerr" />
+              </div>
+            </form>
+          </div>
+
+          
+        </div>
+
+        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+            <div class="col-lg-6 contact-info">
+                <p>Email: <span class="bold-contact"> info@8thvisionproperties.com </span>  </p>
+                <p> Tel: <span class="bold-contact">323-620-6424</span>   </p>
+            </div>
+        </div>
+
+        <!-- <div class="row gx-4 gx-lg-5 justify-content-center">
+          <div class="col-lg-4 text-center mb-5 mb-lg-0">
+            <i class="bi-phone fs-2 mb-3 text-muted"></i>
+            <div>+1 (555) 123-4567</div>
+          </div>
+        </div> -->
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- Footer-->
+    <footer class="bg-light py-5">
+      <div class="container px-4 px-lg-5">
+        <div class="small text-center text-muted">
+          &copy; 2021 by Eder Canada | Realtor - 8th Vision Properties
+        </div>
+      </div>
+    </footer>
+
+
+
+<!-- Calendly badge widget begin -->
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/canada-eder/60min', text: 'Schedule a Tour', color: '#f7f284', textColor: '#212529', branding: false }); }</script>
+<!-- Calendly badge widget end -->
+
+
+     <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- SimpleLightbox plugin JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+    <!-- Core theme JS-->
+   
+    <script src="js/playground.js"></script>
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

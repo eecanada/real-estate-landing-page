@@ -68,7 +68,7 @@ $(".vpop").on('click', function(e) {
     if($(this).data('type') == 'vimeo') var srchref="//player.vimeo.com/video/";
     else if($(this).data('type') == 'youtube') var srchref="https://www.youtube.com/embed/";
     
-    if($(this).data('autoplay') == true) autoplay = '?autoplay=1';
+    if($(this).data('autoplay') == true) autoplay = '?autoplay=1&muted=1';
     
     $("#video-popup-iframe").attr('src', srchref+id+autoplay);
     

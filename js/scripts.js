@@ -1,11 +1,4 @@
-/*!
-* Start Bootstrap - Creative v7.0.4 (https://startbootstrap.com/theme/creative)
-* Copyright 2013-2021 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
-*/
-//
-// Scripts
-// 
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -19,15 +12,15 @@ window.addEventListener('DOMContentLoaded', event => {
         } else {
             navbarCollapsible.classList.add('navbar-shrink')
         }
-
+  
     };
-
+  
     // Shrink the navbar 
     navbarShrink();
-
+  
     // Shrink the navbar when page is scrolled
     document.addEventListener('scroll', navbarShrink);
-
+  
     // Activate Bootstrap scrollspy on the main nav element
     const mainNav = document.body.querySelector('#mainNav');
     if (mainNav) {
@@ -36,7 +29,7 @@ window.addEventListener('DOMContentLoaded', event => {
             offset: 74,
         });
     };
-
+  
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
     const responsiveNavItems = [].slice.call(
@@ -49,18 +42,47 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         });
     });
-
+  
     // Activate SimpleLightbox plugin for portfolio items
     new SimpleLightbox({
         elements: '#portfolio a.portfolio-box'
     });
-
-});
-
-
-/////////////////////////////VIDEO/////////////////////////////////
-
-$(".vpop").on('click', function(e) {
+  
+  });
+  
+  
+  
+  //////////////////VIDEO BACKGROUND/////////////////////////
+  
+  var timeoutId;
+  var $videoBgAspect = $(".videobg-aspect");
+  var $videoBgWidth = $(".videobg-width");
+  var videoAspect = $videoBgAspect.outerHeight() / $videoBgAspect.outerWidth();
+  
+  function videobgEnlarge() {
+    console.log('resize');
+    windowAspect = ($(window).height() / $(window).width());
+    if (windowAspect > videoAspect) {
+      $videoBgWidth.width((windowAspect / videoAspect) * 100 + '%');
+    } else {
+      $videoBgWidth.width(100 + "%")
+    }
+  }
+  
+  $(window).resize(function() {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(videobgEnlarge, 100);
+  });
+  
+  $(function() {
+    videobgEnlarge();
+  });
+  
+  
+  
+  /////////////////////////////HOME-VIDEO/////////////////////////////////
+  
+  $(".vpop").on('click', function(e) {
     e.preventDefault();
     $("#video-popup-overlay,#video-popup-iframe-container,#video-popup-container,#video-popup-close").show();
     
@@ -81,5 +103,5 @@ $(".vpop").on('click', function(e) {
     $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
     $("#video-popup-iframe").attr('src', '');
   });
-
-
+  
+  

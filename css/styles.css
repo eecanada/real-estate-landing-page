@@ -11770,7 +11770,9 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  background: none;
 }
+
 header.masthead h1,
 header.masthead .h1 {
   font-size: 2.25rem;
@@ -11916,6 +11918,7 @@ header.masthead .h1 {
   font-weight: 700;
   font-family: 'Merriweather Sans', sans-serif;
   margin-bottom: 4rem;
+  z-index: -1;
 }
 
 #arrow {
@@ -12076,10 +12079,17 @@ hr.dividerr {
 }
 
 input {
-  /* outline: 0; */
-  border-width: 0 0 2px;
+  outline: 0 !important;
+  border-width: 0px 0px 2px;
   border-color: #bfbfbf;
   font-family: 'Merriweather Sans', sans-serif;
+  border-top:none !important;
+  border-left:none !important;
+  border-right:none !important;
+  border-top-style: hidden !important;
+  border-right-style: hidden !important;
+  border-left-style: hidden !important;
+  
 }
 input:focus {
   border-color: black;
@@ -12139,10 +12149,12 @@ input:focus {
   font-family: 'Merriweather Sans', sans-serif !important;
   font-size: 22px;
   margin-top: 3rem;
+  color:#212529
 }
 
 .bold-contact {
   font-weight: 700;
+  color:#212529
 }
 
 .navbar-toggler:focus {
@@ -12179,6 +12191,26 @@ header.masthead p {
   #home-video-text, .contact-text, .home-info-text, #home-video-text{
     font-size: 36px;
   }
+  header.masthead {
+    padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url('../assets/img/FINAL_00010-scaled.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  }
+  .videobg {
+    display: none;
+}
+.masthead-video{
+  display: none;
+}
 }
 
 @media screen and (min-width: 576px) {
@@ -12188,7 +12220,29 @@ header.masthead p {
   .desktop {
     display: block;
   }
+  .masthead-mobile{
+    display: none;
+  }
+
+.hero-wrapper{
+  position: relative;
+  height: 100vh;
+  z-index: -1
 }
+
+.hero-overlay-opaque{
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3) ;
+  width: 100%;
+  height:100%;
+  
+}
+}
+
+
+
 
 
 @media (min-width: 992px) {
@@ -12201,4 +12255,89 @@ header.masthead p {
   font-weight: 300 !important;
   font-family: 'Merriweather Sans', sans-serif !important;
   font-size: 18px !important ;
+}
+
+
+/* Quick reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Make elements as high as viewport */
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+}
+
+/* Video background */
+
+.videobg {
+  position: relative;
+  width: 100%; /* Set video container element width here */
+  height: 100%; /* Set video container element height here */
+  overflow: hidden;
+  background: #111; /* bg color, if video is not high enough */
+  z-index: -1;
+}
+
+/* horizontally center the video */
+.videobg-width {
+  position: absolute;
+  width: 100%; /* Change width value to cover more area*/
+  height: 100%;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+  object-fit: cover;
+}
+
+/* set video aspect ratio and vertically center */
+.videobg-aspect {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: -9999px;
+  bottom: -9999px;
+  margin: auto;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  overflow: hidden;
+  
+}
+
+.videobg-make-height {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+}
+
+.videobg-hide-controls {
+  box-sizing: content-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* Vimeo timeline and play button are ~55px high */
+  padding: 55px 97.7777px; /* 16:9 ratio */
+  top: -55px; 
+  left: -97.7777px; /* 16:9 ratio */
+}
+
+.videobg iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 0 none;
+}
+
+.masthead{
+  z-index: 100000000000;
+  background: none;
 }

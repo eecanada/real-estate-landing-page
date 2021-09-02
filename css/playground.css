@@ -12080,7 +12080,7 @@ hr.dividerr {
 
 input {
   outline: 0 !important;
-  border-width: 0 0 2px 0px;
+  border-width: 0px 0px 2px;
   border-color: #bfbfbf;
   font-family: 'Merriweather Sans', sans-serif;
   border-top:none !important;
@@ -12154,6 +12154,7 @@ input:focus {
 
 .bold-contact {
   font-weight: 700;
+  color:#212529
 }
 
 .navbar-toggler:focus {

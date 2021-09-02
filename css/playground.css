@@ -11772,6 +11772,7 @@ header.masthead {
   background-size: cover;
   background: none;
 }
+
 header.masthead h1,
 header.masthead .h1 {
   font-size: 2.25rem;
@@ -12181,6 +12182,17 @@ header.masthead p {
   #home-video-text, .contact-text, .home-info-text, #home-video-text{
     font-size: 36px;
   }
+  header.masthead {
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.3) 0%,
+        rgba(0, 0, 0, 0.3) 100%
+      ),
+      url('../assets/img/FINAL_00010.jpg');
+  }
+  .videobg {
+    display: none;
+}
 }
 
 @media screen and (min-width: 576px) {
@@ -12191,6 +12203,9 @@ header.masthead p {
     display: block;
   }
 }
+
+
+
 
 
 @media (min-width: 992px) {

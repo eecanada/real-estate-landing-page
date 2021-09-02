@@ -12080,12 +12080,12 @@ hr.dividerr {
 
 input {
   outline: 0;
-  border-width: 0 0 2px;
+  /* border-width: 0 0 2px; */
   border-color: #bfbfbf;
   font-family: 'Merriweather Sans', sans-serif;
-  border-top:none;
-  border-left:none;
-  border-right:none;
+  border-top:none !important;
+  border-left:none !important;
+  border-right:none !important;
   
 }
 input:focus {

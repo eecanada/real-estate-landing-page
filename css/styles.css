@@ -12173,6 +12173,9 @@ header.masthead p {
   #home-video-text {
     text-align: center;
   }
+  .address {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 576px) {

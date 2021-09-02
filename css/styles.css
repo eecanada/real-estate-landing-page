@@ -11894,7 +11894,7 @@ header.masthead .h1 {
 }
 
 #realtor {
-  font-weight: 200;
+  font-weight: 300;
 }
 
 .property-name {
@@ -11908,6 +11908,7 @@ header.masthead .h1 {
   letter-spacing: 1px;
   margin-top: 1rem;
   font-family: 'Merriweather Sans', sans-serif;
+  font-size: 22px;
 }
 
 #price {
@@ -12124,7 +12125,6 @@ input:focus {
   padding: 0;
   border: none;
   background: none;
-  text-decoration: underline;
   font-size: 20px;
   font-family: 'Merriweather Sans', sans-serif !important;
   text-underline-position: under;
@@ -12156,6 +12156,13 @@ input:focus {
   color: #bfbfbf;
 }
 
+@media (min-width: 992px){
+header.masthead p {
+    font-size: 22px;
+}
+}
+
+
 @media screen and (max-width: 576px) {
   .mobile {
     display: block;
@@ -12175,4 +12182,17 @@ input:focus {
   .desktop {
     display: block;
   }
+}
+
+
+@media (min-width: 992px) {
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+    color: #bfbfbf;
+}
+}
+
+.nav-link{
+  font-weight: 300 !important;
+  font-family: 'Merriweather Sans', sans-serif !important;
+  font-size: 18px !important ;
 }

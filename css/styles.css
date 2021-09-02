@@ -12176,6 +12176,9 @@ header.masthead p {
   .address {
     font-size: 1rem;
   }
+  #home-video-text, .contact-text, .home-info-text, #home-video-text{
+    font-size: 36px;
+  }
 }
 
 @media screen and (min-width: 576px) {

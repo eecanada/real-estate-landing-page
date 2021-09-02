@@ -12183,12 +12183,18 @@ header.masthead p {
     font-size: 36px;
   }
   header.masthead {
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.3) 0%,
-        rgba(0, 0, 0, 0.3) 100%
-      ),
-      url('../assets/img/FINAL_00010.jpg');
+    padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url('../assets/img/FINAL_00010.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
   }
   .videobg {
     display: none;

@@ -81,7 +81,5 @@ $(".vpop").on('click', function(e) {
     $("#video-popup-iframe-container,#video-popup-container,#video-popup-close,#video-popup-overlay").hide();
     $("#video-popup-iframe").attr('src', '');
   });
-  
 
 
-  let badge = document.getElementsByClassName('')

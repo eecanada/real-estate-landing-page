@@ -12086,6 +12086,9 @@ input {
   border-top:none !important;
   border-left:none !important;
   border-right:none !important;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
   
 }
 input:focus {

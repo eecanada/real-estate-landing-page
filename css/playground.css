@@ -12079,18 +12079,18 @@ hr.dividerr {
 }
 
 input {
-  /* outline: 0 !important; */
-  /* border-width: 0 0 2px; */
+  outline: 0 !important;
+  border-width: 0 0 2px;
   border-color: #bfbfbf;
   font-family: 'Merriweather Sans', sans-serif;
- 
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    background-color: #bfbfbf;
+  border-top:none !important;
+  border-left:none !important;
+  border-right:none !important;
+  border-top-style: hidden !important;
+  border-right-style: hidden !important;
+  border-left-style: hidden !important;
   
 }
-
 input:focus {
   border-color: black;
 }

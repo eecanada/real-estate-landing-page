@@ -11725,7 +11725,7 @@ input:focus {
 }
 
 @media screen and (max-width: 576px) {
-  .phone{
+  .mobile{
     display: block;
   }
   .desktop{
@@ -11733,11 +11733,13 @@ input:focus {
   }
 }
 
+
+
 @media screen and (min-width: 576px) {
+  .mobile{
+    display: none;
+  }
   .desktop{
     display: block;
-  }
-  .phone{
-    display: none;
   }
 }

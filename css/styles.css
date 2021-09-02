@@ -2671,6 +2671,7 @@ textarea.form-control-lg {
   border: 1px solid transparent;
   transform-origin: 0 0;
   transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  font-family: "Merriweather Sans";
 }
 @media (prefers-reduced-motion: reduce) {
   .form-floating > label {
@@ -11685,4 +11686,40 @@ input:focus {
   font-size: 22px !important;
   color: rgb(255, 255, 255);
   cursor: pointer;
+}
+
+.submit-button{
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: underline;
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif !important;
+  text-underline-position: under;
+  font-weight: 700;
+}
+
+.submit-button:hover{
+  color:#BFBFBF
+}
+
+.contact-info{
+  font-family: 'Merriweather Sans', sans-serif !important;
+  font-size: 22px;
+  margin-top:3rem
+}
+
+.bold-contact{
+  font-weight: 700;
+}
+
+
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
+  color: #BFBFBF;
 }
